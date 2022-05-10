@@ -1,0 +1,50 @@
+apiVersion: v1
+entries:
+  couponservice:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-10T15:57:45.135277+05:30"
+    dependencies:
+    - name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.8.6
+    description: A Helm chart for Kubernetes
+    digest: b3618f10258e26276488f4398633d9a05f25ff8c880bd14f4ea1d289917f3050
+    name: couponservice
+    type: application
+    urls:
+    - couponservice-0.1.0.tgz
+    version: 0.1.0
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 8.0.26
+    created: "2022-05-10T15:57:45.139813+05:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Chart to create a Highly available MySQL cluster
+    digest: a8342161bcbe73e37488482b5431c17d7f5ed3f10befcd0384c7d83d75c17f8d
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mysql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mysql
+    - https://mysql.com
+    urls:
+    - charts/mysql-8.8.6.tgz
+    version: 8.8.6
+generated: "2022-05-10T15:57:45.128954+05:30"
